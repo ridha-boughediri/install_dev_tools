@@ -4,42 +4,38 @@ Ce script d'installation a été créé pour faciliter la configuration d'un env
 
 ## Utilisation
 
-1. **Téléchargement du script** : Téléchargez le fichier `install_dev_tools.sh` sur votre système Ubuntu.
+1. **Téléchargement du script** : Utilisez `curl` pour télécharger directement le script depuis GitHub.
 
     ```bash
-    wget https://example.com/install_dev_tools.sh
+    curl -O https://raw.githubusercontent.com/ridha-boughediri/install_dev_tools/main/mon_install_dev_tools.sh
     ```
 
-2. **Attribution des droits d'exécution** : Ouvrez un terminal et rendez-vous dans le répertoire où se trouve le fichier `install_dev_tools.sh`. Utilisez la commande suivante pour attribuer les droits d'exécution au script :
+2. **Attribution des droits d'exécution** : Ouvrez un terminal et rendez-vous dans le répertoire où se trouve le fichier `mon_install_dev_tools.sh`. Utilisez la commande suivante pour attribuer les droits d'exécution au script :
 
     ```bash
-    chmod +x install_dev_tools.sh
+    chmod +x mon_install_dev_tools.sh
     ```
 
 3. **Exécution du script** : Exécutez le script en tant qu'administrateur avec la commande suivante :
 
     ```bash
-    sudo ./install_dev_tools.sh
+    sudo ./mon_install_dev_tools.sh
     ```
 
 4. **Suivez les instructions** : Le script installera automatiquement tous les outils et packages nécessaires. Suivez les instructions à l'écran.
 
-## Liste des Packages Installés
+## Vérification des Installations
 
-- Git
-- Zsh
-- Oh My Zsh
-- Node.js
-- npm
-- Yarn
-- Create React App
-- Angular CLI
-- .NET SDK 6.0
-- Python 3
-- Symfony CLI
-- Docker
-- Visual Studio Code
-- Google Chrome
-- GitKraken
+Après avoir exécuté le script, vous pouvez vérifier les versions des outils installés pour vous assurer qu'ils ont été correctement installés :
 
-
+```bash
+git --version
+docker --version
+code --version
+node -v
+npm -v
+google-chrome --version
+dotnet --version
+python --version
+symfony --version
+zsh --version
